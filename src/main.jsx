@@ -62,13 +62,13 @@ const services = [
 
 const testimonials = [
   [
-    "“Very compassionate and clear. The session helped me slow down and think about my next step.”"
+    "“I was going through a confusing phase in my life, and this session gave me a sense of clarity and peace. The guidance felt personal, honest, and truly comforting.”"
   ],
   [
-    "“A warm experience with thoughtful guidance. I appreciated the privacy and personal attention.”"
+    "“I really appreciated the patience and personal attention throughout the session. I felt comfortable sharing my concerns, and I left feeling lighter and more positive about the future.”"
   ],
   [
-    "“The reading gave me a different perspective during a difficult decision.”"
+    "“The experience was much more meaningful than I expected. I felt heard without judgment, and the guidance helped me look at my situation with a calmer and clearer mind.”"
   ]
 ];
 
@@ -219,13 +219,11 @@ setMessages((currentMessages) => [
         </div>
 
         <h1>
-          Find Clarity, Healing
-          <br />
-          & <em>Positive Energy</em>
+          Best Astrologer in Mumbai
         </h1>
-
+  <h3>Vedic Astrology, Kundali & Horoscope Guidance </h3>
         <p className="hero-text">
-Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greensboro & all of North and South Carolina - with 30+ years of experience helping thousands restore balance and move forward with confidence.
+Experienced Vedic astrologer serving Mumbai, Thane, Navi Mumbai & surrounding areas — with 35+ years of experience offering personalized horoscope, kundali, birth chart and astrology consultations to help you understand your situation and move forward with greater clarity.
         </p>
 
         <div className="hero-buttons">
@@ -330,9 +328,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
                 </div>
                 <p>Spiritual insight in mumbai</p>
                 <h4>
-                  2026 Spiritual Clarity Guide - What Your Birth Chart Reveals About Love, Career, Finances & Your Life Path
-            
-                  <em>Find your next step.</em>
+                  2026 Spiritual Clarity Guide - What Your Birth Chart Reveals About Love, Career, Finances & Your Life Path Find your next step.
                 </h4>
 
                 <p>
@@ -497,10 +493,10 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
               <div className="eyebrow">
                 About Pandith K.B.Vijay Guruji
               </div>
-
-              <h3>
-                Trusted Vedic Astrologer & <em>ellipse,Spiritual Guide</em> in Mumbai{" "}
-              </h3>
+              <h4>35+ Years of Vedic Astrology Experience</h4>
+              <h4>
+               Trusted Vedic Astrologer & <em> Spiritual Guide </em> in Mumbai
+              </h4>
 
               <p>
                 With over 35 years of experience in Vedic astrology, Pandith K.B.Vijay Guruji has guided individuals and families seeking clarity and direction in important areas of life. Serving clients across Mumbai, Andheri, Bandra, Borivali, Thane, Navi Mumbai, Powai, and surrounding areas, Guruji provides personalized consultations based on traditional Vedic astrology principles.    </p>
@@ -761,21 +757,26 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
 
             {[
               [
-                "Can I speak with K.B.Vijay Guruji by phone or WhatsApp?",
-                "Yes. Use the Call or WhatsApp buttons to start a conversation and ask about availability."
+                "How can an astrologer or psychic help me with my life and future?",
+                "An astrologer or psychic can provide guidance about important areas of life such as career, marriage, relationships, finances, family, and future possibilities. A consultation can help you explore your concerns and gain a clearer perspective."
               ],
               [
-                "What can I ask during a session?",
-                "You can discuss relationships, career, family, personal decisions, astrology and spiritual concerns."
+                "What information do I need for an astrology or psychic consultation?",
+                "For an astrology consultation, you may need your date of birth, exact time of birth, and place of birth. For a psychic consultation, you can simply explain the questions or concerns you would like to discuss."
               ],
               [
-                "Is an astrology reading a guarantee of the future?",
-                "No. Astrology and spiritual guidance are presented for reflection and personal insight, not as guaranteed predictions."
+                " Can astrology or a psychic help with marriage and relationship questions?",
+                "Yes. Astrology can help explore relationship compatibility, marriage prospects, and important periods in personal life. A psychic consultation can also provide personal guidance and perspective on relationship-related questions."
               ],
               [
-                "Are sessions confidential?",
-                "The service is presented as private and confidential. Avoid sharing sensitive financial, password or identity information."
+                "Can an astrologer or psychic provide guidance about career and finances?",
+                "Yes. Astrology can provide guidance about career opportunities, professional changes, business prospects, and financial periods based on your birth chart. A psychic consultation can also provide another perspective on career-related questions."
+              ],
+              [
+                "Can I consult an astrologer or psychic online by phone or WhatsApp?",
+                "Yes. Astrology and psychic consultations can be conducted online through phone or WhatsApp. You can discuss your questions remotely and provide your birth details for an astrology consultation."
               ]
+              
             ].map(([question, answer], index) => (
 
               <div
