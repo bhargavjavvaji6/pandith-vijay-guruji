@@ -79,7 +79,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       from: "ai",
-      text: "Namaste ✨ I’m the Vikram AI Guide. How can I help you today?"
+      text: "Namaste ✨ I’m the K.B.Vijay Guruji AI Guide. How can I help you today?"
     }
   ]);
 
@@ -89,7 +89,7 @@ function App() {
   const sendChat = (text = input) => {
     const clean = text.trim();
 
-    ```
+  
 if (!clean) {
   return;
 }
@@ -103,14 +103,12 @@ setMessages((currentMessages) => [
   {
     from: "ai",
     text:
-      "Thank you for sharing. For personalized guidance, please connect with Vikram by phone or WhatsApp. This chat is only a demo assistant."
+      "Thank you for sharing. For personalized guidance, please connect with K.B.Vijay Guruji by phone or WhatsApp. This chat is only a demo assistant."
   }
 ]);
 
-setInput("");
-```
-
-  };
+ setInput("");
+ };
 
 
   const handleForm = (event) => {
@@ -142,7 +140,7 @@ setInput("");
 
           <img
             src={LOGO}
-            alt="Vikram Astrologer logo"
+            alt="Astrologer logo"
             className="brand-logo"
             onError={(event) => {
               event.currentTarget.style.display = "none";
@@ -150,7 +148,7 @@ setInput("");
           />
 
           <span>
-            <strong>Pandith K.B. Vijay Guruji</strong>
+            <strong>Pandith K.B.Vijay Guruji</strong>
             <small>World Famous Astrologer</small>
           </span>
 
@@ -237,7 +235,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
             href={`tel:${PHONE}`}
           >
             <i className="bi bi-stars"></i>
-            Speak with Vikram
+            Speak with K.B.Vijay Guruji
           </a>
 
           <a
@@ -315,6 +313,160 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
   </div>
 </section>
 
+      <section
+        id="contact"
+        className="section-pad contact-section"
+      >
+        <div className="container">
+
+          <div className="contact-box">
+
+            <div className="row g-5 align-items-center">
+
+              <div className="col-lg-5">
+
+                <div className="eyebrow">
+                  BOOK A CONSULTATION
+                </div>
+                <p>Spiritual insight in mumbai</p>
+                <h4>
+                  2026 Spiritual Clarity Guide - What Your Birth Chart Reveals About Love, Career, Finances & Your Life Path
+            
+                  <em>Find your next step.</em>
+                </h4>
+
+                <p>
+                  Tell us what you would like guidance on
+                  and we'll help you start the conversation.
+                </p>
+
+                <a
+                  href={WHATSAPP}
+                  className="whatsapp-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-whatsapp"></i>
+                  WhatsApp K.B. Vijay Guruji
+                </a>
+
+              </div>
+
+              <div className="col-lg-7">
+
+                {formSent ? (
+
+                  <div className="success-box">
+
+                    <i className="bi bi-check-circle-fill"></i>
+
+                    <h3>
+                      Thank you.
+                    </h3>
+
+                    <p>
+                      Your request has been recorded as a
+                      demo submission. Please use Call or
+                      WhatsApp for a real appointment.
+                    </p>
+
+                  </div>
+
+                ) : (
+
+                  <form
+                    onSubmit={handleForm}
+                    className="consult-form"
+                  >
+
+                    <div className="row g-3">
+
+                      <div className="col-md-6">
+
+                        <label>
+                          Full name
+                        </label>
+
+                        <input
+                          required
+                          className="form-control"
+                          placeholder="Your name"
+                        />
+
+                      </div>
+
+                      <div className="col-md-6">
+
+                        <label>
+                          Phone / WhatsApp
+                        </label>
+
+                        <input
+                          required
+                          className="form-control"
+                          placeholder="+91 91234 56789"
+                        />
+
+                      </div>
+
+                      <div className="col-12">
+
+                        <label>
+                          What would you like guidance on?
+                        </label>
+
+                        <select className="form-select">
+
+                          <option>
+                            Love & Relationships
+                          </option>
+
+                          <option>
+                            Career & Business
+                          </option>
+
+                          <option>
+                            Birth Chart
+                          </option>
+
+                          <option>
+                            Spiritual Guidance
+                          </option>
+
+                          <option>
+                            Other
+                          </option>
+
+                        </select>
+
+                      </div>
+
+                      <div className="col-12">
+
+                        <button
+                          type="submit"
+                          className="gold-btn w-100"
+                        >
+                          Request a Consultation
+                          <i className="bi bi-arrow-right"></i>
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                )}
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
 
       <section
         id="about"
@@ -343,7 +495,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
             <div className="col-lg-7">
 
               <div className="eyebrow">
-                About Pandith K.B. Vijay Guruji
+                About Pandith K.B.Vijay Guruji
               </div>
 
               <h3>
@@ -351,9 +503,9 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
               </h3>
 
               <p>
-                With over 35 years of experience in Vedic astrology, Pandith K.B. Vijay Guruji has guided individuals and families seeking clarity and direction in important areas of life. Serving clients across Mumbai, Andheri, Bandra, Borivali, Thane, Navi Mumbai, Powai, and surrounding areas, Guruji provides personalized consultations based on traditional Vedic astrology principles.    </p>
+                With over 35 years of experience in Vedic astrology, Pandith K.B.Vijay Guruji has guided individuals and families seeking clarity and direction in important areas of life. Serving clients across Mumbai, Andheri, Bandra, Borivali, Thane, Navi Mumbai, Powai, and surrounding areas, Guruji provides personalized consultations based on traditional Vedic astrology principles.    </p>
 <p> Whether you are searching for an astrologer in Mumbai, best astrologer in Mumbai, Vedic astrologer near you, or trusted guidance for marriage, relationships, career, business, finance, or personal matters, each consultation is approached with care, confidentiality, and individual attention.</p>
-<p> With a traditional approach combined with years of practical experience, Pandith K.B. Vijay Guruji provides thoughtful astrological guidance to help you understand your situation, gain clarity, and move forward with greater confidence.</p>
+<p> With a traditional approach combined with years of practical experience, Pandith K.B.Vijay Guruji provides thoughtful astrological guidance to help you understand your situation, gain clarity, and move forward with greater confidence.</p>
 
               <div className="stats row g-3 mt-3">
 
@@ -465,7 +617,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
             <div className="col-lg-5">
 
               <div className="eyebrow">
-                WHY CHOOSE VIKRAM
+                WHY CHOOSE K.B.Vijay Guruji
               </div>
 
               <h3>
@@ -609,7 +761,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
 
             {[
               [
-                "Can I speak with Vikram by phone or WhatsApp?",
+                "Can I speak with K.B.Vijay Guruji by phone or WhatsApp?",
                 "Yes. Use the Call or WhatsApp buttons to start a conversation and ask about availability."
               ],
               [
@@ -701,7 +853,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
                   rel="noreferrer"
                 >
                   <i className="bi bi-whatsapp"></i>
-                  WhatsApp Vikram
+                  WhatsApp K.B. Vijay Guruji
                 </a>
 
               </div>
@@ -758,7 +910,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
                         <input
                           required
                           className="form-control"
-                          placeholder="+1 ..."
+                          placeholder="+91 91234 56789"
                         />
 
                       </div>
@@ -792,20 +944,6 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
                           </option>
 
                         </select>
-
-                      </div>
-
-                      <div className="col-12">
-
-                        <label>
-                          Your message
-                        </label>
-
-                        <textarea
-                          className="form-control"
-                          rows="4"
-                          placeholder="Briefly tell us what is on your mind..."
-                        ></textarea>
 
                       </div>
 
@@ -845,7 +983,7 @@ Trusted psychic, energy healer & spiritual guide serving Raleigh, Durham, Greens
     <a
       className="floating-call"
       href={`tel:${PHONE}`}
-      aria-label="Call Vikram"
+      aria-label="Call K.B. Vijay Guruji"
     >
       <i className="bi bi-telephone-fill"></i>
       <span>Call</span>
