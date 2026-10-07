@@ -1,0 +1,505 @@
+:root{
+  --bg:#080713;--bg2:#0d0a1b;--card:#121024;--gold:#d9b86c;--gold2:#f1d99b;
+  --cream:#f4ead4;--muted:#b8aec4;--line:rgba(217,184,108,.22);--burg:#4a1729;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--cream);font-family:Karla,system-ui,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:92px 92px;z-index:0}
+.site{position:relative;overflow:hidden;min-height:100vh}.site>*{position:relative;z-index:1}
+.site:after{content:"";position:absolute;width:700px;height:700px;right:-300px;top:450px;background:radial-gradient(circle,rgba(112,32,67,.22),transparent 68%);pointer-events:none}
+.site-nav{background:rgba(7,6,17,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);z-index:1000}
+.brand{display:flex;align-items:center;gap:10px;color:var(--cream)!important;text-decoration:none}.brand img{width:42px;height:42px;object-fit:contain;border-radius:50%}.brand strong{display:block;font-family:"Cormorant Garamond",serif;font-size:23px;line-height:18px}.brand small{display:block;color:var(--gold);font-size:9px;letter-spacing:1px;text-transform:uppercase}.nav-link{color:#cfc5d4!important;font-size:13px}.nav-link:hover{color:var(--gold2)!important}.nav-call{display:inline-block;color:#17110a;background:var(--gold);padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:700;font-size:12px}.navbar-toggler{color:var(--gold);border:1px solid var(--line)}.navbar-toggler i{font-size:23px}
+.section-pad{padding:105px 0}.hero{min-height:790px;padding-top:150px;background:radial-gradient(circle at 80% 40%,rgba(93,31,66,.28),transparent 36%),linear-gradient(180deg,#090716,#080713)}
+.eyebrow{color:var(--gold);font-size:11px;letter-spacing:2.4px;font-weight:700;margin-bottom:17px}.hero h1,h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:.95;letter-spacing:-1px}.hero h1{font-size:clamp(55px,7vw,91px);max-width:680px}.hero h1 em,h2 em{color:var(--gold);font-style:italic}.hero-text{color:#c2b9c8;font-size:18px;line-height:1.75;max-width:620px;margin:25px 0 32px}.gold-btn,.outline-btn,.whatsapp-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:5px;padding:14px 22px;text-decoration:none;font-weight:700;font-size:13px}.gold-btn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17100a;border:0}.outline-btn{border:1px solid var(--line);color:var(--cream)}.outline-btn:hover{border-color:var(--gold);color:var(--gold)}.trust-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:32px}.trust-row span{border:1px solid var(--line);border-radius:30px;padding:8px 12px;color:#a9a0b2;font-size:10px}
+.hero-art{height:550px;position:relative;display:flex;align-items:center;justify-content:center}.hero-image-wrap{width:360px;height:460px;border-radius:50% 50% 46% 46%;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 80px rgba(216,177,100,.13);position:relative;z-index:2;background:#100c20}.hero-image-wrap img{width:100%;height:100%;object-fit:cover}.orbit{position:absolute;border:1px solid rgba(217,184,108,.23);border-radius:50%;transform:rotate(-20deg)}.orbit-one{width:540px;height:270px}.orbit-two{width:620px;height:340px;transform:rotate(38deg);border-color:rgba(130,74,111,.3)}.floating-badge{position:absolute;background:rgba(15,11,28,.9);border:1px solid var(--line);padding:10px 14px;border-radius:30px;color:var(--gold2);font-size:11px;z-index:3;box-shadow:0 12px 30px #0008}.badge-one{left:0;top:120px}.badge-two{right:0;top:210px}.badge-three{right:20px;bottom:115px}
+.about-section{background:linear-gradient(180deg,#0b0917,#0d0918)}h2{font-size:58px;margin-bottom:24px}.about-section p,.why-section p{color:var(--muted);font-size:16px;line-height:1.8}.portrait-card{position:relative;border:1px solid var(--line);padding:10px}.portrait-card img{width:100%;height:530px;object-fit:cover;filter:saturate(.8)}.portrait-caption{position:absolute;bottom:10px;left:10px;right:10px;background:linear-gradient(transparent,#070611);padding:50px 22px 18px}.portrait-caption strong,.portrait-caption span{display:block}.portrait-caption span{font-size:11px;color:var(--gold);margin-top:5px}.stats{border-top:1px solid var(--line);padding-top:22px}.stats strong{display:block;color:var(--gold);font-family:"Cormorant Garamond";font-size:42px}.stats span{font-size:10px;color:#aaa1b1;text-transform:uppercase;letter-spacing:1px}
+.section-heading{max-width:750px;margin:auto}.section-heading p{color:var(--muted)}.service-card{height:100%;padding:30px;background:linear-gradient(145deg,#131023,#0e0b19);border:1px solid rgba(217,184,108,.15);transition:.3s}.service-card:hover{transform:translateY(-6px);border-color:var(--line);box-shadow:0 20px 50px #0006}.service-icon{width:52px;height:52px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:22px;margin-bottom:25px}.service-card h3{font-family:"Cormorant Garamond";font-size:29px}.service-card p{color:var(--muted);font-size:14px;line-height:1.7;min-height:72px}.service-card a{color:var(--gold);font-size:12px;text-decoration:none}
+.why-section{background:linear-gradient(110deg,#0d0918,#150a17)}.reason-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.reason{display:flex;gap:17px;padding:25px;background:#100c1d;border:1px solid var(--line)}.reason>i{color:var(--gold);font-size:25px}.reason h4{font-family:"Cormorant Garamond";font-size:23px;margin:0}.reason p{font-size:12px!important;margin:7px 0 0}.quote-card{height:100%;background:#100c1d;border:1px solid var(--line);padding:35px}.quote-mark{font-family:Georgia;color:var(--gold);font-size:55px;height:40px}.quote-card p{font-family:"Cormorant Garamond";font-size:25px;line-height:1.25}.quote-card span{color:var(--gold);font-size:11px}
+.faq-section{background:#0c0916}.faq{max-width:850px;margin:auto}.accordion-item{background:#110d1e!important;border:1px solid var(--line)!important;margin-bottom:10px}.accordion-button{background:#110d1e!important;color:var(--cream)!important;box-shadow:none!important;font-family:"Cormorant Garamond";font-size:21px}.accordion-button:after{filter:invert(1) sepia(1) saturate(3)}.accordion-body{color:var(--muted);font-size:14px;line-height:1.7}
+.contact-box{background:radial-gradient(circle at 20% 20%,rgba(94,31,64,.4),transparent 50%),#100b1d;border:1px solid var(--line);padding:55px}.contact-box p{color:var(--muted);line-height:1.7}.whatsapp-btn{margin-top:15px;background:#1d8e58;color:white}.consult-form label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gold);margin-bottom:7px}.form-control,.form-select{background:#090713;border:1px solid var(--line);color:var(--cream);border-radius:3px;padding:12px}.form-control:focus,.form-select:focus{background:#090713;color:var(--cream);border-color:var(--gold);box-shadow:none}.form-select option{background:#0c0916}.success-box{text-align:center;padding:60px 20px;border:1px solid var(--line);background:#0b0915}.success-box i{color:#6fce9c;font-size:45px}.success-box h3{font-family:"Cormorant Garamond";font-size:38px}.disclaimer{font-size:10px;color:#776e80}
+.footer{padding:55px 0 25px;background:#06050d;border-top:1px solid var(--line)}.footer-brand{display:flex;gap:13px;align-items:center}.footer-brand img{width:58px;height:58px;object-fit:contain}.footer-brand strong,.footer-brand span{display:block}.footer-brand span{font-size:10px;color:var(--gold);margin-top:5px}.footer a{color:var(--gold2);text-decoration:none;margin-left:18px;font-size:13px}.footer p,.footer small{color:#756d7e;font-size:11px}.footer hr{border-color:var(--line)}
+.floating-call,.floating-whatsapp,.floating-ai{position:fixed;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1100;border:1px solid var(--line);box-shadow:0 12px 30px #0009;text-decoration:none}.floating-call{left:22px;bottom:22px;background:var(--gold);color:#17100a;gap:6px}.floating-call span{display:none}.floating-right{position:fixed;right:22px;bottom:22px;display:flex;flex-direction:column;gap:12px;z-index:1100}.floating-whatsapp{position:static;background:#1c9b61;color:white}.floating-ai{position:static;background:#5b234e;color:var(--gold2);cursor:pointer;font-size:22px}
+.chat-overlay{position:fixed;inset:0;background:#0008;z-index:2000;display:flex;align-items:flex-end;justify-content:flex-end;padding:20px}.chat-panel{width:min(390px,100%);height:min(650px,calc(100vh - 40px));background:#0d0a19;border:1px solid var(--line);box-shadow:0 25px 80px #000;display:flex;flex-direction:column}.chat-head{padding:18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}.chat-head strong,.chat-head small{display:block}.chat-head small{font-size:10px;color:#8f8598;margin-top:4px}.chat-head button{background:none;border:0;color:var(--cream)}.chat-messages{flex:1;padding:18px;overflow:auto}.msg{max-width:84%;padding:11px 13px;border-radius:13px;margin-bottom:10px;font-size:13px;line-height:1.5}.msg.ai{background:#171125;border:1px solid var(--line)}.msg.user{margin-left:auto;background:#5a234d;color:white}.quick-actions{padding:10px 15px;display:flex;gap:7px;flex-wrap:wrap}.quick-actions button{background:#171125;color:var(--gold2);border:1px solid var(--line);border-radius:20px;padding:7px 10px;font-size:10px}.chat-input{padding:13px;border-top:1px solid var(--line);display:flex;gap:8px}.chat-input input{flex:1;background:#070611;border:1px solid var(--line);color:white;padding:10px;border-radius:4px}.chat-input button{background:var(--gold);border:0;width:44px;border-radius:4px}
+@media(max-width:991px){.hero{padding-top:125px}.hero-art{height:480px}.nav-call{margin-top:8px}.hero-image-wrap{width:300px;height:390px}.orbit-one{width:440px}.orbit-two{width:500px}.badge-one{left:5%}.badge-two{right:5%}}
+@media(max-width:767px){.section-pad{padding:75px 0}.hero{min-height:auto}.hero h1{font-size:54px}.hero-text{font-size:16px}.hero-art{height:430px}.hero-image-wrap{width:250px;height:340px}.floating-call{left:15px;bottom:15px}.floating-right{right:15px;bottom:15px}.floating-call,.floating-whatsapp,.floating-ai{width:52px;height:52px}.reason-grid{grid-template-columns:1fr}.contact-box{padding:28px 20px}h2{font-size:45px}.portrait-card img{height:420px}.footer a{display:block;margin:8px 0}}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700&display=swap');
+
+/* =========================================================
+   HERO ASTROLOGY CHART
+   ========================================================= */
+
+.hero-chart-side {
+  width: 50%;
+  height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: visible;
+}
+
+/* Main chart */
+.astrology-chart {
+  width: 570px;
+  height: 570px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  transform: translateX(10px);
+
+  animation: chartFloat 6s ease-in-out infinite;
+}
+
+/* Background glow */
+.chart-glow {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(177, 102, 255, 0.13) 0%,
+      rgba(130, 70, 170, 0.08) 35%,
+      rgba(0, 0, 0, 0) 72%
+    );
+
+  filter: blur(10px);
+
+  pointer-events: none;
+}
+
+/* Rings */
+.chart-ring {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(205, 158, 62, 0.32);
+
+  pointer-events: none;
+}
+
+.ring-1 {
+  width: 570px;
+  height: 570px;
+}
+
+.ring-2 {
+  width: 390px;
+  height: 390px;
+}
+
+.ring-3 {
+  width: 270px;
+  height: 270px;
+}
+
+/* Inner subtle glow */
+.ring-2::after {
+  content: "";
+
+  position: absolute;
+  inset: -1px;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 25px rgba(205, 158, 62, 0.05);
+}
+
+/* =========================================================
+   ASTROLOGY LINES
+   ========================================================= */
+
+.chart-line {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 570px;
+  height: 1px;
+
+  transform-origin: center;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(157, 137, 203, 0.30),
+    rgba(157, 137, 203, 0.55),
+    rgba(157, 137, 203, 0.30),
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+.line-horizontal {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.line-vertical {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.line-diagonal-1 {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.line-diagonal-2 {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+
+.line-diagonal-3 {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.line-diagonal-4 {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+/* =========================================================
+   CENTER
+   ========================================================= */
+
+.chart-center {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #e7bd55;
+
+  box-shadow:
+    0 0 8px rgba(231, 189, 85, 0.9),
+    0 0 25px rgba(231, 189, 85, 0.35);
+
+  z-index: 20;
+}
+
+.chart-center::before,
+.chart-center::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  background: #e7bd55;
+
+  transform: translate(-50%, -50%);
+}
+
+.chart-center::before {
+  width: 26px;
+  height: 1px;
+}
+
+.chart-center::after {
+  width: 1px;
+  height: 26px;
+}
+
+.chart-center span {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  background: #f3d477;
+}
+
+/* =========================================================
+   PLANETS
+   ========================================================= */
+
+.planet {
+  position: absolute;
+
+  border-radius: 50%;
+
+  z-index: 15;
+}
+
+.planet-gold {
+  background: #dcae3f;
+
+  box-shadow:
+    0 0 8px rgba(220, 174, 63, 0.7),
+    0 0 22px rgba(220, 174, 63, 0.25);
+}
+
+.planet-purple {
+  background: #9563f5;
+
+  box-shadow:
+    0 0 10px rgba(149, 99, 245, 0.9),
+    0 0 30px rgba(149, 99, 245, 0.4);
+}
+
+.planet-pink {
+  background: #d96883;
+
+  box-shadow:
+    0 0 10px rgba(217, 104, 131, 0.8),
+    0 0 30px rgba(217, 104, 131, 0.35);
+}
+
+.planet-1 {
+  width: 13px;
+  height: 13px;
+
+  left: 17%;
+  top: 50%;
+
+  animation: planetPulse 3s ease-in-out infinite;
+}
+
+.planet-2 {
+  width: 18px;
+  height: 18px;
+
+  left: 78%;
+  top: 28%;
+
+  animation: planetPulse 3.8s ease-in-out infinite;
+}
+
+.planet-3 {
+  width: 15px;
+  height: 15px;
+
+  left: 63%;
+  top: 82%;
+
+  animation: planetPulse 4.2s ease-in-out infinite;
+}
+
+/* =========================================================
+   ZODIAC SYMBOLS
+   ========================================================= */
+
+.zodiac {
+  position: absolute;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #a36aff,
+      #7142c7
+    );
+
+  color: #f8edff;
+
+  font-size: 22px;
+  font-family: Georgia, serif;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  box-shadow:
+    0 0 8px rgba(147, 88, 255, 0.65),
+    0 0 18px rgba(121, 61, 226, 0.28);
+
+  z-index: 30;
+
+  transform: rotate(0deg);
+
+  animation:
+    zodiacFloat 4s ease-in-out infinite;
+}
+
+/* Individual zodiac positions */
+
+.zodiac-1 {
+  left: 47%;
+  top: -1%;
+}
+
+.zodiac-2 {
+  left: 68%;
+  top: 4%;
+  animation-delay: -0.3s;
+}
+
+.zodiac-3 {
+  left: 86%;
+  top: 17%;
+  animation-delay: -0.6s;
+}
+
+.zodiac-4 {
+  left: 94%;
+  top: 43%;
+  animation-delay: -0.9s;
+}
+
+.zodiac-5 {
+  left: 86%;
+  top: 69%;
+  animation-delay: -1.2s;
+}
+
+.zodiac-6 {
+  left: 68%;
+  top: 86%;
+  animation-delay: -1.5s;
+}
+
+.zodiac-7 {
+  left: 46%;
+  top: 94%;
+  animation-delay: -1.8s;
+}
+
+.zodiac-8 {
+  left: 24%;
+  top: 87%;
+  animation-delay: -2.1s;
+}
+
+.zodiac-9 {
+  left: 8%;
+  top: 70%;
+  animation-delay: -2.4s;
+}
+
+.zodiac-10 {
+  left: 0%;
+  top: 46%;
+  animation-delay: -2.7s;
+}
+
+.zodiac-11 {
+  left: 9%;
+  top: 19%;
+  animation-delay: -3s;
+}
+
+.zodiac-12 {
+  left: 27%;
+  top: 4%;
+  animation-delay: -3.3s;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes chartFloat {
+  0%,
+  100% {
+    transform: translateX(10px) translateY(0);
+  }
+
+  50% {
+    transform: translateX(10px) translateY(-8px);
+  }
+}
+
+@keyframes zodiacFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+}
+
+@keyframes planetPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .astrology-chart {
+    width: 500px;
+    height: 500px;
+  }
+
+  .ring-1 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .ring-2 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .ring-3 {
+    width: 240px;
+    height: 240px;
+  }
+
+  .chart-line {
+    width: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-chart-side {
+    width: 100%;
+    height: 520px;
+
+    margin-top: 20px;
+  }
+
+  .astrology-chart {
+    transform: scale(0.85);
+  }
+
+  .chart-line {
+    width: 570px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-chart-side {
+    height: 430px;
+  }
+
+  .astrology-chart {
+    transform: scale(0.68);
+  }
+}
